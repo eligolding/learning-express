@@ -13,6 +13,10 @@ app.get('/contact', (req,res) => {
   res.send('This is the contact page');
 });
 
+app.get('/product', (req, res) => {
+  return res.send('And a wonderful product it is!')
+})
+
 app.listen(3000, () => {
   console.log('listening very attentively on port 3000');
 })
